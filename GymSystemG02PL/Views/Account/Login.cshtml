@@ -19,21 +19,19 @@
 </head>
 
 <body>
-    <div class="login-container">
+    <div class="login-container" style="width:100%; ">
         <!-- Left Side - Login Form -->
         <div class="login-form-section">
             <div class="logo-section">
-                <div class="logo-icon">
-                    <i class="bi bi-lightning-charge-fill"></i>
+                <div class="logo-icon bg-white" style="width:324px;height:180px;border:none; box-shadow:none;">
+                    <img class="img-fluid  " style="border:none;" src="~/images/img1.png" />
                 </div>
-                <h1 class="brand-name"> Fitness</h1>
-                <p class="brand-subtitle">Gym Management System</p>
+                <h1 class="brand-name">  Admin Login </h1>
+                <p class="brand-subtitle">Welcome back, Please Login to your Account </p>
             </div>
 
-            <h2 class="login-title">Admin Login</h2>
-            <p class="login-subtitle">Welcome back! Please login to your account</p>
 
-            <form asp-action="Login" asp-controller="Account" method="post" id="loginForm">
+            <form style="width:70%; margin:auto;" asp-action="Login" asp-controller="Account" method="post" id="loginForm">
                 @Html.ValidationMessage("InvalidLogin", new { @class = "text-danger" })
 
                 <div class="form-floating">
@@ -70,12 +68,12 @@
         <!-- Right Side - Gym Info -->
         <div class="gym-info-section">
             <div class="gym-content">
-                <div class="gym-icon">
-                    💪
+                <div class="gym-icon" >
+                    <img class="img-fluid"  src="~/images/img2.png"/>
                 </div>
                 <h2 class="gym-title">
-                    Your body can <span style="color: #ffd700;">stand</span><br>
-                    almost anything
+                    Your body can <span style="color: #FED643;">stand almost</span><br>
+                     anything
                 </h2>
                 <p class="gym-description">
                     It's your mind that needs convincing. Push past your limits,<br>

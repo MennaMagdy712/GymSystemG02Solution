@@ -1,7 +1,7 @@
 ﻿/* ^ global style */
 
 :root {
-    --primary-color: #070093;
+    --primary-color: #FA990C;
     --main-duration: 300ms;
     --black-alternative: #242424;
 }
@@ -16,7 +16,7 @@ ul {
 }
 
 .bar {
-    font-size: 35px;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
@@ -60,6 +60,7 @@ h5,
 h6,
 .navbar {
     font-family: 'Baloo Thambi 2', system-ui;
+    font-size: 16px;
 }
 
 p,
@@ -82,7 +83,7 @@ pre {
 header.home-section header p {
     position: relative;
     padding-left: 22px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
     header.home-section header p::before {
@@ -157,9 +158,10 @@ section.about {
 /* ^ workout section */
 
 section.workout {
-    margin-top: 200px !important;
-    background-image: linear-gradient(var(--primary-color) 65%, #fff 65%);
+    margin-top: 80px !important;
+    background-image: linear-gradient(#FEA521, #ffff);
     padding-bottom: 80px;
+    padding-top: 40px;
 }
 
     section.workout .title {
@@ -167,12 +169,13 @@ section.workout {
         text-align: center;
         transform: translateY(-20%);
         margin-inline: auto;
+        
     }
 
         section.workout .title h2 {
-            font-size: 60px;
+            font-size: 35px;
             font-weight: 700;
-            background-image: linear-gradient(#070093 45%, #ffffff);
+            background-image: linear-gradient(#C16B34 45%, #ffffff);
             color: transparent;
             background-clip: text;
         }
@@ -182,6 +185,8 @@ section.workout {
         border-radius: 18px !important;
         box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
         overflow: hidden;
+        
+        border: 3px solid #FEAB31;
     }
 
         section.workout .card img {
@@ -191,7 +196,7 @@ section.workout {
 
         section.workout .card a {
             text-decoration: none !important;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
             color: var(--primary-color);
         }
@@ -239,29 +244,29 @@ section.workout {
 
 /* Filled Button - Default State */
 .btn-fill {
-    background-color: #070093;
-    border-color: #070093;
+    background-color: #FA990C;
+    border-color: #FA990C;
     color: #fff;
 }
 
     /* Filled Button - Hover State (Switch to Outline) */
     .btn-fill:hover {
         background-color: transparent;
-        border-color: #070093;
-        color: #070093;
+        border-color: #FA990C;
+        color: #FA990C;
     }
 
 /* Outline Button - Default State */
 .btn-outline {
     background-color: transparent;
-    border-color: #070093;
-    color: #070093;
+    border-color: #FA990C;
+    color: #FA990C;
 }
 
     /* Outline Button - Hover State (Switch to Fill) */
     .btn-outline:hover {
-        background-color: #070093;
-        border-color: #070093;
+        background-color: #FA990C;
+        border-color: #FA990C;
         color: #fff;
     }
 

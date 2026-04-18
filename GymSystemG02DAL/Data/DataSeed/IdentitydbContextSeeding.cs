@@ -54,7 +54,7 @@ namespace GymSystemG02DAL.Data.DataSeed
                         PhoneNumber = "01296455220"
                     };
                     userManager.CreateAsync(Admin, "Malak@123").Wait();
-                    userManager.AddToRoleAsync(Admin, "Admin").Wait();
+                    userManager.AddToRoleAsync(Admin, "SuperAdmin").Wait();
                 }
                 return true;
             }
